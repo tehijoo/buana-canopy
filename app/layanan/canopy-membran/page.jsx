@@ -1,98 +1,96 @@
 import React from 'react';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Jasa Pembuatan Canopy Membran – Hidayah Canopy',
-  description: 'Layanan jasa pembuatan dan pemasangan canopy membran berkualitas tinggi dari Hidayah Canopy.',
+  title: 'Jasa Instalasi Kanopi Atap Membrane – CV. Sinar Berkah Group',
+  description: 'Layanan jasa pembuatan dan pemasangan kanopi atap membrane berkualitas tinggi dengan material bersertifikasi internasional dari CV. Sinar Berkah Group.',
 };
 
 export default function CanopyMembranPage() {
   return (
-    <main className="min-h-screen bg-gray-50 pb-20">
-      
-      {/* Banner Header - Menggunakan Biru #006295 */}
-      <section className="bg-[#006295] py-20 text-center text-white px-6 relative overflow-hidden">
-        {/* Ornamen Abu-abu Halus untuk estetika */}
-        <div className="absolute top-0 left-0 w-32 h-32 bg-white/5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gray-400/10 rounded-full translate-x-1/4 translate-y-1/4"></div>
+    <main className="min-h-screen bg-neutral-bg pb-24">
 
+      {/* Banner Header */}
+      <section className="bg-primary py-24 text-center text-white px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-lines" />
         <div className="relative z-10">
-          <h1 className="text-4xl md:text-5xl font-black mb-4 uppercase tracking-tight">Canopy Membran</h1>
-          <div className="w-20 h-1 bg-[#f59e0b] mx-auto mb-6"></div>
-          <p className="text-blue-100 text-lg font-medium opacity-90 italic">Jasa Pembuatan & Pemasangan Profesional</p>
+          <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">01 · Premium Service</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Kanopi Atap Membrane</h1>
+          <p className="text-white/60 text-lg font-medium">Jasa Pembuatan &amp; Pemasangan Profesional Sejak 2000</p>
         </div>
       </section>
 
       {/* Konten Utama */}
       <section className="container mx-auto max-w-5xl px-6 mt-16">
-        <div className="bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-gray-100 text-gray-700 leading-relaxed text-justify space-y-6 relative">
-          
-          {/* Badge Abu-abu Aksen */}
-          <div className="inline-block bg-gray-100 text-[#006295] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-2">
-            Premium Service
-          </div>
+        <div className="bg-white p-8 md:p-12 border border-primary/10">
 
-          {/* Heading */}
-          <h2 className="text-3xl font-black text-[#006295] mb-6 leading-tight">
-            Best Quality, Hasil Rapi & <span className="text-[#f59e0b]">Presisi</span>
-          </h2>
+          <ScrollReveal direction="up">
+            <h2 className="text-3xl font-bold text-primary mb-6 leading-tight">
+              Best Quality, Hasil Rapi &amp; <span className="text-secondary">Presisi</span>
+            </h2>
+          </ScrollReveal>
 
-          {/* Grid Layout: Teks di Kiri (8 kolom), Foto Potrait di Kanan (4 kolom) */}
+          {/* Grid Layout: Teks di Kiri (8 kolom), Foto di Kanan (4 kolom) */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mt-8">
-            
+
             {/* Kolom Teks */}
-            <div className="lg:col-span-8 space-y-5 order-2 lg:order-1">
-              <p className="text-lg font-medium text-gray-800">
-                Pembuatan canopy membran dengan material berkualitas tinggi, memiliki daya tahan optimal terhadap cuaca, tampilan modern, serta fleksibilitas bentuk yang artistik.
-              </p>
-              
-              <div className="h-px bg-gray-200 w-full my-6"></div>
+            <ScrollReveal direction="left" className="lg:col-span-8 order-2 lg:order-1">
+              <div className="space-y-5 text-neutral-text/70 leading-relaxed">
+                <p className="text-lg font-medium text-primary">
+                  Pembuatan kanopi atap membrane dengan material berkualitas tinggi, memiliki daya tahan optimal terhadap cuaca, tampilan modern, serta fleksibilitas bentuk yang artistik.
+                </p>
 
-              <p>
-                Layanan pembuatan <strong className="text-[#006295]">Canopy Membran</strong> dari Hidayah Canopy menawarkan solusi perlindungan outdoor dengan tampilan modern dan estetika tinggi. Canopy membran dikenal sebagai salah satu jenis canopy premium yang memiliki fleksibilitas bentuk sehingga dapat dirancang dalam berbagai model artistik.
-              </p>
-              
-              <p>
-                Kami menggunakan bahan kain membrane yang telah teruji kekuatannya terhadap paparan sinar UV dan hujan ekstrem. Struktur rangka yang kami bangun menggunakan besi pilihan dengan teknik pengelasan yang rapi, memastikan keamanan dan keindahan bangunan Anda terjaga dalam waktu yang lama. 
-              </p>
+                <div className="h-px bg-primary/10 w-full my-6"></div>
 
-              <ul className="list-disc list-inside space-y-2 text-sm md:text-base text-gray-600 mt-4 bg-gray-50 p-6 rounded-xl border border-gray-100">
-                <li><strong className="text-gray-800">Sangat Cocok Untuk:</strong> Area parkir, taman, teras rumah mewah, cafe outdoor, hingga tempat usaha skala besar.</li>
-                <li><strong className="text-gray-800">Keunggulan:</strong> Anti sobek, memantulkan sinar UV, tidak mudah berjamur, dan sangat ikonik.</li>
-              </ul>
-            </div>
+                <p>
+                  Layanan instalasi <strong className="text-primary">Kanopi Atap Membrane</strong> dari CV. Sinar Berkah Group menawarkan solusi perlindungan outdoor dengan tampilan modern dan estetika tinggi. Kanopi membrane dikenal sebagai salah satu jenis kanopi premium yang memiliki fleksibilitas bentuk sehingga dapat dirancang dalam berbagai model artistik.
+                </p>
 
-            {/* Kolom Foto Portrait */}
-            <div className="lg:col-span-4 order-1 lg:order-2 w-full">
-              <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-gray-100 relative group">
-                <img 
-                  src="/detail-membran.jpeg" 
-                  alt="Hasil Pemasangan Canopy Membran" 
+                <p>
+                  Kami menggunakan bahan membrane bersertifikasi standar internasional dari brand terpercaya seperti <strong className="text-primary">AGTex</strong>, <strong className="text-primary">Serge Ferrari</strong>, dan <strong className="text-primary">HEYtex</strong> yang telah teruji kekuatannya terhadap paparan sinar UV dan hujan ekstrem. Struktur rangka dibangun dengan teknik pengelasan yang rapi, memastikan keamanan dan keindahan bangunan Anda terjaga dalam waktu yang lama.
+                </p>
+
+                <ul className="space-y-2 text-sm mt-4 bg-neutral-bg p-6 border-l-2 border-secondary">
+                  <li><strong className="text-primary">Sangat Cocok Untuk:</strong> Area parkir, taman, teras rumah, masjid, sekolah, hingga gedung instansi pemerintah.</li>
+                  <li><strong className="text-primary">Keunggulan:</strong> Anti sobek, memantulkan sinar UV, tidak mudah berjamur, dan tampilan sangat ikonik.</li>
+                  <li><strong className="text-primary">Material:</strong> Bersertifikasi standar internasional (AGTex, Serge Ferrari, HEYtex).</li>
+                </ul>
+              </div>
+            </ScrollReveal>
+
+            {/* Kolom Foto */}
+            <ScrollReveal direction="scale" className="lg:col-span-4 order-1 lg:order-2 w-full">
+              <div className="w-full aspect-[3/4] overflow-hidden relative group">
+                <img
+                  src="/images/25.jpeg"
+                  alt="Hasil Pemasangan Kanopi Atap Membrane CV. Sinar Berkah Group"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                {/* Kotak Info Mengambang di atas gambar */}
-                <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-xl shadow-sm border border-white">
-                  <p className="text-xs font-bold text-[#006295] text-center tracking-wide uppercase">Hasil Pemasangan Kami</p>
+                <div className="absolute bottom-4 left-4 right-4 bg-white/95 p-3">
+                  <p className="text-xs font-bold text-primary text-center tracking-wide uppercase">Hasil Pemasangan Kami</p>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
 
           </div>
 
           {/* CTA Ringkas di dalam Halaman */}
-          <div className="mt-12 p-8 bg-gray-50 rounded-2xl border-l-4 border-[#006295] flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-              <h4 className="text-[#006295] font-bold text-xl">Ingin Pasang Canopy Membran?</h4>
-              <p className="text-sm text-gray-500">Dapatkan konsultasi gratis dan survei lokasi sekarang.</p>
+          <ScrollReveal direction="up">
+            <div className="mt-12 p-8 bg-primary flex flex-col md:flex-row justify-between items-center gap-6">
+              <div>
+                <h4 className="text-white font-bold text-xl">Ingin Pasang Kanopi Atap Membrane?</h4>
+                <p className="text-sm text-white/50">Dapatkan konsultasi dan survei lokasi gratis sekarang.</p>
+              </div>
+              <a
+                href="https://wa.me/6281276443339"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-slide bg-secondary text-primary px-8 py-3 font-semibold whitespace-nowrap text-center"
+              >
+                Hubungi Admin
+              </a>
             </div>
-            <a 
-              href="https://wa.me/6285832731232"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#f59e0b] hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-orange-500/30 transition-all transform hover:-translate-y-1 whitespace-nowrap text-center"
-            >
-              Hubungi Admin
-            </a>
-          </div>
+          </ScrollReveal>
         </div>
       </section>
     </main>

@@ -1,84 +1,139 @@
 import React from 'react';
-import { Phone, Mail, MapPin, CheckCircle2 } from 'lucide-react'; 
+import { ShieldCheck, Award, Users2, Target, Eye } from 'lucide-react';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Tentang Kami – Hidayah Canopy',
-  description: 'Hidayah Canopy adalah ahli dalam pembuatan dan pemasangan kanopi membran, kain, dan alderon terbaik di Indonesia.',
+  title: 'Tentang Kami – CV. Sinar Berkah Group',
+  description: 'CV. Sinar Berkah Group adalah perusahaan penyedia barang dan jasa instalasi, spesialis kanopi atap membrane, yang telah berdiri sejak tahun 2000.',
 };
 
 export default function TentangKamiPage() {
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* MAIN CONTENT AREA */}
-      <main className="flex-grow bg-white">
-        
-        {/* Banner Section - REVISI: Menggunakan Biru #006295 */}
-        <section className="bg-[#006295] text-white py-20 px-6">
-          <div className="container mx-auto text-center max-w-4xl">
-            <h1 className="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tight">Hidayah Canopy</h1>
-            <p className="text-xl text-blue-100 italic font-medium opacity-90">
-              "Solusi Estetika dan Perlindungan Ruang Terbuka Anda"
-            </p>
+    <main className="bg-neutral-bg">
+
+      {/* Banner Section */}
+      <section className="bg-primary text-white py-24 px-6 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-lines" />
+        <div className="container mx-auto text-center max-w-4xl relative z-10">
+          <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Tentang Kami</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">CV. Sinar Berkah Group</h1>
+          <p className="text-white/60 text-lg font-medium">
+            Ahlinya Instalasi Kanopi Membrane &amp; Alderon Sejak Tahun 2000
+          </p>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-6 py-20 max-w-6xl">
+        {/* Main Story Section */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center mb-24">
+          <ScrollReveal direction="left" className="order-2 md:order-1">
+            <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Siapa Kami?</p>
+            <h2 className="text-3xl font-bold text-primary mb-6">Penyedia Jasa Instalasi Kanopi Terpercaya</h2>
+
+            <div className="space-y-4 text-neutral-text/70 leading-relaxed">
+              <p>
+                <strong className="text-primary">CV. Sinar Berkah Group</strong> adalah perusahaan penyedia barang dan jasa instalasi yang telah berdiri sejak tahun 2000. Kami memiliki legalitas perusahaan yang lengkap serta tenaga ahli berpengalaman di bidangnya.
+              </p>
+              <p>
+                Kami memiliki dua produk unggulan: <strong className="text-primary">Kanopi Atap Membrane</strong>, menggunakan material berkualitas tinggi dari brand terpercaya seperti AGTex, Serge Ferrari, dan HEYtex; serta <strong className="text-primary">Kanopi Alderon</strong> berbahan UPVC yang kokoh, anti karat, dan kedap suara — untuk memastikan hasil pekerjaan yang presisi, estetis, dan tahan lama.
+              </p>
+              <p>
+                Kami telah dipercaya mengerjakan proyek kanopi atap membrane untuk berbagai instansi pemerintah, korporasi, fasilitas pendidikan, tempat ibadah, hingga hunian pribadi di berbagai wilayah Indonesia.
+              </p>
+            </div>
+
+            {/* Badge Brand Material */}
+            <div className="flex flex-wrap gap-3 mt-8">
+              {['AGTex', 'Serge Ferrari', 'HEYtex'].map((brand) => (
+                <span key={brand} className="border border-primary/15 text-primary text-xs font-semibold px-4 py-2 tracking-wide">
+                  {brand}
+                </span>
+              ))}
+            </div>
+          </ScrollReveal>
+
+          {/* Foto Dokumentasi Nyata */}
+          <ScrollReveal direction="scale" className="order-1 md:order-2">
+            <div className="relative overflow-hidden bg-neutral-bg aspect-video md:aspect-square">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/16.jpeg')" }}
+              ></div>
+              <div className="absolute inset-0 border-4 border-secondary/0 hover:border-secondary/60 transition-colors duration-500" />
+            </div>
+          </ScrollReveal>
+        </section>
+
+        {/* Yang Kami Punya Section */}
+        <section className="mb-24">
+          <ScrollReveal direction="up">
+            <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-3 text-center">Nilai Kami</p>
+            <h3 className="text-3xl font-bold text-center text-primary mb-14">Yang Kami Punya</h3>
+          </ScrollReveal>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-primary/10 border border-primary/10">
+            {[
+              { title: "Integrity", desc: "Kami mempunyai integritas yang tinggi dalam bekerja.", icon: ShieldCheck },
+              { title: "Excellence", desc: "Kami mempunyai tenaga kerja yang mempunyai keterampilan dalam bidangnya.", icon: Award },
+              { title: "Collaboration", desc: "Berkolaborasi untuk mendapatkan hasil yang maksimal.", icon: Users2 }
+            ].map((item, idx) => (
+              <ScrollReveal direction="up" delay={idx * 0.1} key={idx}>
+                <div className="bg-white p-8 text-center h-full">
+                  <div className="bg-primary w-14 h-14 flex items-center justify-center mx-auto mb-6 text-secondary">
+                    <item.icon size={26} />
+                  </div>
+                  <h4 className="font-bold text-primary mb-3 text-lg">{item.title}</h4>
+                  <p className="text-neutral-text/60 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </ScrollReveal>
+            ))}
           </div>
         </section>
 
-        <div className="container mx-auto px-6 py-16 max-w-6xl">
-          {/* Main Story Section */}
-          <section className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="order-2 md:order-1">
-              <h2 className="text-3xl font-bold text-[#006295] mb-4 uppercase tracking-wide">Siapa Kami?</h2>
-              {/* REVISI: Garis menggunakan Oranye Amber */}
-              <div className="h-1.5 w-20 bg-[#f59e0b] mb-6"></div>
-              
-              <div className="space-y-4 text-gray-700 leading-relaxed text-justify">
-                <p>
-                  <strong className="text-[#006295]">Hidayah Canopy</strong> adalah penyedia jasa profesional yang bergerak di bidang spesialis pembuatan dan pemasangan berbagai jenis kanopi, mulai dari Kanopi Membran, Kanopi Kain (Awning), hingga Alderon.
-                </p>
-                <p>
-                  Kami berdedikasi untuk memberikan hasil kerja yang presisi, estetis, dan tahan lama. Dengan didukung oleh tenaga ahli berpengalaman dan penggunaan material berkualitas tinggi (Standard Internasional), kami memastikan setiap proyek yang kami tangani mampu memberikan nilai tambah bagi properti Anda.
-                </p>
-                <p>
-                  Visi kami adalah menjadi mitra terpercaya bagi pelanggan di seluruh Indonesia, mulai dari skala rumah tangga, kafe/restoran, hingga area komersial dan publik. Kualitas, ketahanan, dan kepuasan pelanggan adalah pilar utama operasional kami.
-                </p>
-              </div>
-            </div>
-
-            {/* Image Placeholder */}
-            <div className="order-1 md:order-2">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-100 aspect-video md:aspect-square flex items-center justify-center border-8 border-gray-50">
-                <div className="text-center p-8">
-                  {/* REVISI: Teks logo di placeholder menggunakan Biru */}
-                  <p className="font-black text-2xl text-[#006295] mb-2">HIDAYAH CANOPY</p>
-                  <p className="text-gray-500 font-medium uppercase tracking-widest text-xs">Workshop & Gallery Foto</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Keunggulan Section - REVISI: Menggunakan Abu-abu Muda */}
-          <section className="bg-gray-100 rounded-3xl p-10 shadow-inner border border-gray-200">
-            <h3 className="text-2xl font-bold text-center text-[#006295] mb-12 uppercase tracking-wide">
-              Kenapa Memilih Hidayah Canopy?
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              {[
-                { title: "Material Premium", desc: "Menggunakan kain & membran impor berkualitas tinggi yang tahan sinar UV dan air." },
-                { title: "Tenaga Ahli", desc: "Dikerjakan oleh teknisi berpengalaman yang menjamin kerapian struktur baja dan kain." },
-                { title: "Harga Kompetitif", desc: "Memberikan penawaran harga terbaik yang sebanding dengan kualitas hasil akhir." }
-              ].map((item, idx) => (
-                <div key={idx} className="p-6 bg-white rounded-2xl shadow-sm border border-gray-200/50 transform hover:-translate-y-1 transition duration-300">
-                  {/* REVISI: Ikon menggunakan Oranye Amber */}
-                  <div className="bg-[#f59e0b] w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6 text-white shadow-lg rotate-3 hover:rotate-0 transition-transform">
-                    <CheckCircle2 size={28} />
+        {/* Visi & Misi Section */}
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-primary/10 border border-primary/10">
+          <ScrollReveal direction="left">
+            <div className="bg-primary p-10 text-white flex flex-col h-full relative overflow-hidden">
+              <div className="absolute inset-0 bg-grid-lines" />
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="bg-secondary text-primary w-12 h-12 flex items-center justify-center shrink-0">
+                    <Eye size={22} />
                   </div>
-                  <h4 className="font-bold text-gray-900 mb-3 text-lg">{item.title}</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">{item.desc}</p>
+                  <h3 className="text-2xl font-bold">Visi</h3>
                 </div>
-              ))}
+                <p className="text-white/60 leading-relaxed">
+                  Menjadi perusahaan pengadaan barang dan jasa yang dapat dipercaya dan diandalkan dalam menjual produk dan mengerjakan pekerjaan secara bertanggung jawab dan amanah.
+                </p>
+              </div>
             </div>
-          </section>
-        </div>
-      </main>
-    </div>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right">
+            <div className="bg-white p-10 flex flex-col h-full">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="border border-primary/15 text-primary w-12 h-12 flex items-center justify-center shrink-0">
+                  <Target size={22} />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">Misi</h3>
+              </div>
+              <ol className="space-y-4 text-neutral-text/70 text-sm leading-relaxed">
+                <li className="flex gap-3">
+                  <span className="text-secondary font-bold font-display shrink-0">01</span>
+                  Memberikan produk yang bermutu sesuai dengan standarisasi / SNI.
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-secondary font-bold font-display shrink-0">02</span>
+                  Memberikan kepuasan kepada pelanggan dalam penjualan produk dan jasa kami.
+                </li>
+                <li className="flex gap-3">
+                  <span className="text-secondary font-bold font-display shrink-0">03</span>
+                  Bekerja dengan penuh rasa tanggung jawab, amanah, profesional, serta menjalankan standarisasi K3 dengan baik.
+                </li>
+              </ol>
+            </div>
+          </ScrollReveal>
+        </section>
+      </div>
+    </main>
   );
 }

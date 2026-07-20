@@ -1,3 +1,7 @@
+# sinarberkahcanopy
+
+Website resmi CV. Sinar Berkah Group — jasa instalasi kanopi atap membrane dan kanopi alderon.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

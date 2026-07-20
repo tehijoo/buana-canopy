@@ -1,11 +1,11 @@
 export const articles = [
   {
     id: 1,
-    slug: 'pasang-kanopi-membran-sukabumi',
-    title: 'Pasang Kanopi Membran Sukabumi',
+    slug: 'pasang-kanopi-membran-cibubur',
+    title: 'Pasang Kanopi Membran di Cibubur',
     date: '3 Mei 2026',
-    excerpt: 'Kanopi membran kini menjadi salah satu pilihan paling populer untuk berbagai kebutuhan bangunan modern, baik hunian maupun komersial di Sukabumi.',
-    image: '/layanan-membran.jpeg'
+    excerpt: 'Kanopi atap membrane kini menjadi salah satu pilihan paling populer untuk berbagai kebutuhan bangunan modern, termasuk proyek pemasangan yang telah kami kerjakan di kawasan Cibubur, Jakarta.',
+    image: '/images/2.jpeg'
   },
   {
     id: 2,
@@ -13,14 +13,14 @@ export const articles = [
     title: 'Jasa Pembuatan Kanopi Profesional',
     date: '15 April 2026',
     excerpt: 'Memilih jasa pembuatan kanopi yang profesional sangat penting untuk memastikan ketahanan dan estetika bangunan Anda. Berikut tips memilihnya.',
-    image: '/pekerja.jpeg'
+    image: '/images/16.jpeg'
   },
   {
     id: 3,
-    slug: 'jasa-pasang-peredam-panas-atap',
-    title: 'Jasa Pasang Peredam Panas Atap',
+    slug: 'kanopi-membran-masjid-sekolah',
+    title: 'Kanopi Membran untuk Masjid & Sekolah',
     date: '7 Maret 2026',
-    excerpt: 'Cuaca panas seringkali membuat suhu dalam ruangan meningkat drastis. Solusi terbaik adalah memasang peredam panas atap berkualitas tinggi.',
-    image: '/layanan-peredam.jpeg'
+    excerpt: 'Kanopi membrane tidak hanya cocok untuk hunian pribadi, tapi juga ideal untuk fasilitas publik seperti masjid dan sekolah yang membutuhkan area teduh yang luas.',
+    image: '/images/42.jpeg'
   }
 ];
