@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col">
           <div className="flex items-center gap-3 mb-5">
             <img
-              src="/logo.png"
+              src="/logo.jpeg"
               alt="Logo CV. Sinar Berkah Group"
               className="w-12 h-12 rounded-full object-cover border border-white/15 bg-white shrink-0"
             />
