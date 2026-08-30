@@ -42,7 +42,7 @@ export default async function DetailArtikelPage({ params }) {
 
         {/* Header Artikel (Judul & Info) */}
         <div className="mb-8 text-center md:text-left">
-          <span className="border border-secondary text-secondary text-xs font-semibold px-3 py-1 mb-4 inline-block tracking-widest uppercase">
+          <span className="border border-secondary text-secondary text-xs font-semibold px-3 py-1 mb-4 inline-block tracking-widest uppercase rounded-full">
             Info Kanopi
           </span>
           <h1 className="text-3xl md:text-5xl font-bold text-primary leading-tight mb-6">
@@ -55,19 +55,19 @@ export default async function DetailArtikelPage({ params }) {
             </div>
             <div className="flex items-center gap-1">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-              <span>Admin Sinar Berkah Group</span>
+              <span>Admin Buana Kanopi</span>
             </div>
           </div>
         </div>
 
         {/* Gambar Utama Artikel */}
         <div
-          className="w-full h-64 md:h-[450px] bg-neutral-bg mb-10 bg-cover bg-center"
+          className="w-full h-64 md:h-[450px] bg-neutral-bg mb-10 bg-cover bg-center rounded-3xl"
           style={{ backgroundImage: `url('${article.image}')` }}
         ></div>
 
         {/* Isi / Konten Artikel */}
-        <div className="bg-white p-6 md:p-10 border border-primary/10 text-neutral-text/70 leading-relaxed prose prose-lg max-w-none">
+        <div className="bg-white p-6 md:p-10 border border-primary/10 rounded-3xl text-neutral-text/70 leading-relaxed prose prose-lg max-w-none">
           <p className="text-lg font-medium text-primary mb-6">
             {article.excerpt}
           </p>
@@ -81,10 +81,10 @@ export default async function DetailArtikelPage({ params }) {
             <li><strong>Perawatan Mudah:</strong> Tidak memerlukan perawatan rumit. Cukup membersihkan permukaan secara berkala.</li>
           </ul>
           <p>
-            Permintaan instalasi kanopi atap membrane terus meningkat. CV. Sinar Berkah Group hadir sebagai penyedia jasa profesional yang telah berpengalaman sejak tahun 2000, melayani pemasangan kanopi membrane untuk instansi pemerintah, korporasi, hingga hunian pribadi di berbagai wilayah Indonesia dengan standar kualitas terbaik.
+            Permintaan instalasi kanopi atap membrane terus meningkat. CV. Buana Teknikal Pratama hadir sebagai penyedia jasa profesional yang telah berpengalaman sejak tahun 2000, melayani pemasangan kanopi membrane untuk instansi pemerintah, korporasi, hingga hunian pribadi di berbagai wilayah Indonesia dengan standar kualitas terbaik.
           </p>
-          <p className="mt-8 p-6 bg-neutral-bg border-l-2 border-secondary italic text-primary font-medium">
-            "Jika Anda membutuhkan kanopi atap membrane yang kuat, elegan, dan dikerjakan oleh tenaga ahli berpengalaman, CV. Sinar Berkah Group adalah solusi terbaik untuk kebutuhan Anda."
+          <p className="mt-8 p-6 bg-neutral-bg border-l-2 border-secondary rounded-r-2xl italic text-primary font-medium">
+            "Jika Anda membutuhkan kanopi atap membrane yang kuat, elegan, dan dikerjakan oleh tenaga ahli berpengalaman, CV. Buana Teknikal Pratama adalah solusi terbaik untuk kebutuhan Anda."
           </p>
         </div>
 

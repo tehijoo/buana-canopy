@@ -1,10 +1,10 @@
 import React from 'react';
-import { ShieldCheck, Award, Users2, Target, Eye } from 'lucide-react';
+import { ShieldCheck, Award, Users2 } from 'lucide-react';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Tentang Kami – CV. Sinar Berkah Group',
-  description: 'CV. Sinar Berkah Group adalah perusahaan penyedia barang dan jasa instalasi, spesialis kanopi atap membrane, yang telah berdiri sejak tahun 2000.',
+  title: 'Tentang Kami – CV. Buana Teknikal Pratama',
+  description: 'CV. Buana Teknikal Pratama adalah perusahaan penyedia barang dan jasa instalasi, spesialis kanopi atap membrane, yang telah berdiri sejak tahun 2000.',
 };
 
 export default function TentangKamiPage() {
@@ -16,7 +16,7 @@ export default function TentangKamiPage() {
         <div className="absolute inset-0 bg-grid-lines" />
         <div className="container mx-auto text-center max-w-4xl relative z-10">
           <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Tentang Kami</p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">CV. Sinar Berkah Group</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">CV. Buana Teknikal Pratama</h1>
           <p className="text-white/60 text-lg font-medium">
             Ahlinya Instalasi Kanopi Membrane &amp; Alderon Sejak Tahun 2000
           </p>
@@ -32,10 +32,10 @@ export default function TentangKamiPage() {
 
             <div className="space-y-4 text-neutral-text/70 leading-relaxed">
               <p>
-                <strong className="text-primary">CV. Sinar Berkah Group</strong> adalah perusahaan penyedia barang dan jasa instalasi yang telah berdiri sejak tahun 2000. Kami memiliki legalitas perusahaan yang lengkap serta tenaga ahli berpengalaman di bidangnya.
+                <strong className="text-primary">CV. Buana Teknikal Pratama</strong> adalah perusahaan penyedia barang dan jasa instalasi yang telah berdiri sejak tahun 2000. Kami memiliki legalitas perusahaan yang lengkap serta tenaga ahli berpengalaman di bidangnya.
               </p>
               <p>
-                Kami memiliki dua produk unggulan: <strong className="text-primary">Kanopi Atap Membrane</strong>, menggunakan material berkualitas tinggi dari brand terpercaya seperti AGTex, Serge Ferrari, dan HEYtex; serta <strong className="text-primary">Kanopi Alderon</strong> berbahan UPVC yang kokoh, anti karat, dan kedap suara — untuk memastikan hasil pekerjaan yang presisi, estetis, dan tahan lama.
+                Kami memiliki dua produk unggulan: <strong className="text-primary">Kanopi Atap Membrane</strong>, menggunakan material berkualitas tinggi dari brand terpercaya seperti AGTex, Serge Ferrari, dan HEYtex; serta <strong className="text-primary">Kanopi Alderon</strong> berbahan UPVC yang kokoh, anti karat, dan kedap suara, sehingga hasil pekerjaan presisi, estetis, dan tahan lama.
               </p>
               <p>
                 Kami telah dipercaya mengerjakan proyek kanopi atap membrane untuk berbagai instansi pemerintah, korporasi, fasilitas pendidikan, tempat ibadah, hingga hunian pribadi di berbagai wilayah Indonesia.
@@ -45,7 +45,7 @@ export default function TentangKamiPage() {
             {/* Badge Brand Material */}
             <div className="flex flex-wrap gap-3 mt-8">
               {['AGTex', 'Serge Ferrari', 'HEYtex'].map((brand) => (
-                <span key={brand} className="border border-primary/15 text-primary text-xs font-semibold px-4 py-2 tracking-wide">
+                <span key={brand} className="border border-primary/15 text-primary text-xs font-semibold px-4 py-2 tracking-wide rounded-full">
                   {brand}
                 </span>
               ))}
@@ -54,7 +54,7 @@ export default function TentangKamiPage() {
 
           {/* Foto Dokumentasi Nyata */}
           <ScrollReveal direction="scale" className="order-1 md:order-2">
-            <div className="relative overflow-hidden bg-neutral-bg aspect-video md:aspect-square">
+            <div className="relative overflow-hidden bg-neutral-bg aspect-video md:aspect-square rounded-3xl">
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: "url('/images/16.jpeg')" }}
@@ -70,15 +70,15 @@ export default function TentangKamiPage() {
             <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-3 text-center">Nilai Kami</p>
             <h3 className="text-3xl font-bold text-center text-primary mb-14">Yang Kami Punya</h3>
           </ScrollReveal>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-primary/10 border border-primary/10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
               { title: "Integrity", desc: "Kami mempunyai integritas yang tinggi dalam bekerja.", icon: ShieldCheck },
               { title: "Excellence", desc: "Kami mempunyai tenaga kerja yang mempunyai keterampilan dalam bidangnya.", icon: Award },
               { title: "Collaboration", desc: "Berkolaborasi untuk mendapatkan hasil yang maksimal.", icon: Users2 }
             ].map((item, idx) => (
               <ScrollReveal direction="up" delay={idx * 0.1} key={idx}>
-                <div className="bg-white p-8 text-center h-full">
-                  <div className="bg-primary w-14 h-14 flex items-center justify-center mx-auto mb-6 text-secondary">
+                <div className="bg-white border border-primary/10 rounded-2xl p-8 text-center h-full">
+                  <div className="bg-primary w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6 text-secondary">
                     <item.icon size={26} />
                   </div>
                   <h4 className="font-bold text-primary mb-3 text-lg">{item.title}</h4>
@@ -90,14 +90,14 @@ export default function TentangKamiPage() {
         </section>
 
         {/* Visi & Misi Section */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-primary/10 border border-primary/10">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <ScrollReveal direction="left">
-            <div className="bg-primary p-10 text-white flex flex-col h-full relative overflow-hidden">
+            <div className="bg-primary p-10 text-white flex flex-col h-full relative overflow-hidden rounded-3xl">
               <div className="absolute inset-0 bg-grid-lines" />
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="bg-secondary text-primary w-12 h-12 flex items-center justify-center shrink-0">
-                    <Eye size={22} />
+                  <div className="bg-secondary text-primary-dark w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-display font-bold text-lg">
+                    01
                   </div>
                   <h3 className="text-2xl font-bold">Visi</h3>
                 </div>
@@ -109,10 +109,10 @@ export default function TentangKamiPage() {
           </ScrollReveal>
 
           <ScrollReveal direction="right">
-            <div className="bg-white p-10 flex flex-col h-full">
+            <div className="bg-white border border-primary/10 rounded-3xl p-10 flex flex-col h-full">
               <div className="flex items-center gap-3 mb-6">
-                <div className="border border-primary/15 text-primary w-12 h-12 flex items-center justify-center shrink-0">
-                  <Target size={22} />
+                <div className="border border-primary/15 text-primary w-12 h-12 rounded-xl flex items-center justify-center shrink-0 font-display font-bold text-lg">
+                  02
                 </div>
                 <h3 className="text-2xl font-bold text-primary">Misi</h3>
               </div>

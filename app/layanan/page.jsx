@@ -3,8 +3,8 @@ import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Layanan Kami – CV. Sinar Berkah Group',
-  description: 'Jasa pembuatan dan pemasangan kanopi atap membrane serta kanopi alderon dari CV. Sinar Berkah Group.',
+  title: 'Layanan Kami – CV. Buana Teknikal Pratama',
+  description: 'Jasa pembuatan dan pemasangan kanopi atap membrane serta kanopi alderon dari CV. Buana Teknikal Pratama.',
 };
 
 const services = [
@@ -12,7 +12,7 @@ const services = [
     tag: '01 · Premium Service',
     title: 'Kanopi Atap Membrane',
     desc: 'Material bersertifikasi internasional (AGTex, Serge Ferrari, HEYtex), tampilan modern, dan fleksibilitas bentuk artistik.',
-    image: '/images/25.jpeg',
+    image: '/images/3.jpeg',
     href: '/layanan/canopy-membran',
   },
   {
@@ -45,7 +45,7 @@ export default function LayananPage() {
             <ScrollReveal direction="up" delay={index * 0.12} key={service.href}>
               <Link
                 href={service.href}
-                className="group block border border-primary/10 hover:border-secondary transition-colors duration-300 h-full"
+                className="group block border border-primary/10 hover:border-secondary rounded-2xl overflow-hidden transition-colors duration-300 h-full"
               >
                 <div className="h-56 overflow-hidden">
                   <div

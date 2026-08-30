@@ -21,6 +21,6 @@ export const articles = [
     title: 'Kanopi Membran untuk Masjid & Sekolah',
     date: '7 Maret 2026',
     excerpt: 'Kanopi membrane tidak hanya cocok untuk hunian pribadi, tapi juga ideal untuk fasilitas publik seperti masjid dan sekolah yang membutuhkan area teduh yang luas.',
-    image: '/images/42.jpeg'
+    image: '/images/4.jpeg'
   }
 ];

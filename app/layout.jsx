@@ -1,12 +1,13 @@
 import './globals.css'
-import { Space_Grotesk, Inter } from 'next/font/google'
+import { Poppins, Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer' // <-- Import Footer yang baru dibuat
 
-const spaceGrotesk = Space_Grotesk({
+const poppins = Poppins({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-space-grotesk',
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-poppins',
 });
 
 const inter = Inter({
@@ -16,13 +17,13 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'CV. Sinar Berkah Group | Jasa Instalasi Kanopi Membrane & Alderon',
+  title: 'CV. Buana Teknikal Pratama | Jasa Instalasi Kanopi Membrane & Alderon',
   description: 'Spesialis instalasi kanopi atap membrane dan kanopi alderon sejak tahun 2000. Melayani proyek instansi pemerintah, korporasi, hingga hunian pribadi di seluruh Indonesia.',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id" className={`${spaceGrotesk.variable} ${inter.variable}`}>
+    <html lang="id" className={`${poppins.variable} ${inter.variable}`}>
       {/* Tambahan flex flex-col min-h-screen agar layout stabil dan footer selalu di bawah */}
       <body className="bg-neutral-bg text-neutral-text flex flex-col min-h-screen font-body">
         

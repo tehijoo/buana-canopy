@@ -7,7 +7,7 @@ export default function GaleriPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  const allImages = Array.from({ length: 45 }, (_, i) => `/images/${i + 1}.jpeg`);
+  const allImages = Array.from({ length: 22 }, (_, i) => `/images/${i + 1}.jpeg`);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentImages = allImages.slice(startIndex, startIndex + itemsPerPage);
@@ -36,7 +36,7 @@ export default function GaleriPage() {
         <div className="relative z-10">
           <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Portofolio</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Galeri Foto</h1>
-          <p className="text-white/60 text-lg font-medium">Dokumentasi Hasil Pengerjaan CV. Sinar Berkah Group</p>
+          <p className="text-white/60 text-lg font-medium">Dokumentasi Hasil Pengerjaan CV. Buana Teknikal Pratama</p>
         </div>
       </section>
 
@@ -47,7 +47,7 @@ export default function GaleriPage() {
           {currentImages.map((imageUrl, index) => (
             <div
               key={index}
-              className="group relative w-full aspect-[4/3] bg-white overflow-hidden cursor-pointer"
+              className="group relative w-full aspect-[4/3] bg-white overflow-hidden rounded-2xl cursor-pointer"
             >
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
@@ -74,7 +74,7 @@ export default function GaleriPage() {
         <button
           onClick={goToPrevPage}
           disabled={currentPage === 1}
-          className={`w-10 h-10 flex items-center justify-center border transition ${
+          className={`w-10 h-10 rounded-full flex items-center justify-center border transition ${
             currentPage === 1
               ? "border-primary/10 text-primary/20 cursor-not-allowed"
               : "border-primary/15 text-primary hover:bg-primary hover:text-white hover:border-primary"
@@ -89,7 +89,7 @@ export default function GaleriPage() {
             <button
               key={pageNum}
               onClick={() => goToPage(pageNum)}
-              className={`w-10 h-10 flex items-center justify-center font-semibold transition border ${
+              className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition border ${
                 currentPage === pageNum
                   ? "bg-primary text-white border-primary"
                   : "bg-white text-neutral-text/60 border-primary/15 hover:border-primary hover:text-primary"
@@ -103,7 +103,7 @@ export default function GaleriPage() {
         <button
           onClick={goToNextPage}
           disabled={currentPage === totalPages}
-          className={`w-10 h-10 flex items-center justify-center border transition ${
+          className={`w-10 h-10 rounded-full flex items-center justify-center border transition ${
             currentPage === totalPages
               ? "border-primary/10 text-primary/20 cursor-not-allowed"
               : "border-primary/15 text-primary hover:bg-primary hover:text-white hover:border-primary"

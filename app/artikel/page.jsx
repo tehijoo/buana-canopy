@@ -4,7 +4,7 @@ import { articles } from './data';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Artikel & Blog – CV. Sinar Berkah Group',
+  title: 'Artikel & Blog – CV. Buana Teknikal Pratama',
   description: 'Kumpulan artikel dan informasi terbaru seputar kanopi atap membrane dan tips perawatannya.',
 };
 
@@ -18,7 +18,7 @@ export default function ArtikelPage() {
         <div className="relative z-10">
           <p className="text-secondary text-xs font-semibold tracking-[0.25em] uppercase mb-4">Blog</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Blog &amp; Artikel</h1>
-          <p className="text-white/60 text-lg font-medium">Informasi, Tips, dan Update Terbaru dari CV. Sinar Berkah Group</p>
+          <p className="text-white/60 text-lg font-medium">Informasi, Tips, dan Update Terbaru dari CV. Buana Teknikal Pratama</p>
         </div>
       </section>
 
@@ -30,7 +30,7 @@ export default function ArtikelPage() {
             <ScrollReveal direction="up" delay={index * 0.1} key={article.id}>
               <Link
                 href={`/artikel/${article.slug}`}
-                className="group block border border-primary/10 hover:border-secondary transition-colors duration-300 h-full"
+                className="group block border border-primary/10 hover:border-secondary rounded-2xl overflow-hidden transition-colors duration-300 h-full"
               >
                 <div className="relative w-full h-56 overflow-hidden">
                   <div
