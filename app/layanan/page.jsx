@@ -19,7 +19,7 @@ const services = [
     tag: '02 · High Durability',
     title: 'Kanopi Alderon',
     desc: 'Atap UPVC yang kokoh, anti karat, kedap suara, dan memiliki isolasi panas terbaik untuk kenyamanan maksimal.',
-    image: '/images/6.jpeg',
+    image: '/images/5.jpeg',
     href: '/layanan/canopy-alderon',
   },
 ];

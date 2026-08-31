@@ -13,7 +13,7 @@ export const articles = [
     title: 'Jasa Pembuatan Kanopi Profesional',
     date: '15 April 2026',
     excerpt: 'Memilih jasa pembuatan kanopi yang profesional sangat penting untuk memastikan ketahanan dan estetika bangunan Anda. Berikut tips memilihnya.',
-    image: '/images/16.jpeg'
+    image: '/images/15.jpeg'
   },
   {
     id: 3,
@@ -21,6 +21,6 @@ export const articles = [
     title: 'Kanopi Membran untuk Masjid & Sekolah',
     date: '7 Maret 2026',
     excerpt: 'Kanopi membrane tidak hanya cocok untuk hunian pribadi, tapi juga ideal untuk fasilitas publik seperti masjid dan sekolah yang membutuhkan area teduh yang luas.',
-    image: '/images/4.jpeg'
+    image: '/images/9.jpeg'
   }
 ];

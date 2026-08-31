@@ -7,7 +7,7 @@ export default function GaleriPage() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
 
-  const allImages = Array.from({ length: 22 }, (_, i) => `/images/${i + 1}.jpeg`);
+  const allImages = Array.from({ length: 21 }, (_, i) => `/images/${i + 1}.jpeg`);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentImages = allImages.slice(startIndex, startIndex + itemsPerPage);

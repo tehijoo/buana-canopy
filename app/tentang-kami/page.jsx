@@ -57,7 +57,7 @@ export default function TentangKamiPage() {
             <div className="relative overflow-hidden bg-neutral-bg aspect-video md:aspect-square rounded-3xl">
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/16.jpeg')" }}
+                style={{ backgroundImage: "url('/images/15.jpeg')" }}
               ></div>
               <div className="absolute inset-0 border-4 border-secondary/0 hover:border-secondary/60 transition-colors duration-500" />
             </div>

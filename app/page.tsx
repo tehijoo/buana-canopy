@@ -103,7 +103,7 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="absolute top-0 right-0 w-[78%] h-[80%] bg-cover bg-center shadow-2xl rounded-3xl"
-              style={{ backgroundImage: "url('/images/15.jpeg')" }}
+              style={{ backgroundImage: "url('/images/14.jpeg')" }}
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.94 }}
@@ -228,7 +228,7 @@ export default function Home() {
               title: "Kanopi Alderon",
               desc: "Atap UPVC yang kokoh, anti karat, kedap suara saat hujan, serta memiliki isolasi panas terbaik untuk kenyamanan maksimal.",
               points: ["Cocok untuk carport, teras, area cuci jemur, gudang", "Kokoh, kedap suara, dan tidak mudah luntur"],
-              image: "/images/6.jpeg",
+              image: "/images/5.jpeg",
               href: "/layanan/canopy-alderon",
             },
           ].map((service, index) => (
@@ -376,7 +376,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {['images/22.jpeg', 'images/5.jpeg', 'images/7.jpeg', 'images/8.jpeg', 'images/9.jpeg', 'images/18.jpeg'].map((filename, index) => (
+              {['images/21.jpeg', 'images/4.jpeg', 'images/6.jpeg', 'images/7.jpeg', 'images/8.jpeg', 'images/17.jpeg'].map((filename, index) => (
                 <div key={index} className="w-full aspect-[4/3] bg-neutral-bg bg-cover bg-center cursor-pointer overflow-hidden rounded-2xl group relative">
                   <div
                     className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
@@ -430,8 +430,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { title: "Pasang Kanopi Membran di Cibubur", date: "22 November 2026", image: "/images/2.jpeg", slug: "pasang-kanopi-membran-cibubur" },
-              { title: "Jasa Pembuatan Kanopi Profesional", date: "22 November 2026", image: "/images/16.jpeg", slug: "jasa-pembuatan-kanopi-profesional" },
-              { title: "Kanopi Membran untuk Masjid & Sekolah", date: "22 November 2026", image: "/images/4.jpeg", slug: "kanopi-membran-masjid-sekolah" },
+              { title: "Jasa Pembuatan Kanopi Profesional", date: "22 November 2026", image: "/images/15.jpeg", slug: "jasa-pembuatan-kanopi-profesional" },
+              { title: "Kanopi Membran untuk Masjid & Sekolah", date: "22 November 2026", image: "/images/9.jpeg", slug: "kanopi-membran-masjid-sekolah" },
             ].map((article, index) => (
               <Link key={index} href={`/artikel/${article.slug}`} className="group block border border-primary/10 hover:border-secondary rounded-2xl overflow-hidden transition-colors duration-300">
                 <div className="relative w-full h-48 overflow-hidden">
