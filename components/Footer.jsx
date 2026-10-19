@@ -80,7 +80,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-12 relative z-10">
         <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/60">
           <p>© {new Date().getFullYear()} CV. Buana Teknikal Pratama. All Rights Reserved.</p>
-          <TehijooCredit variant="text" theme="dark" accent="#FFFFFF" />
+          <TehijooCredit variant="text" from="Buana Kanopi" theme="dark" accent="#FFFFFF" />
         </div>
       </div>
     </footer>
