@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import ScrollReveal from '@/components/ScrollReveal';
+import { trackConversion } from '@/lib/ads';
 
 export default function KontakPage() {
   const [formData, setFormData] = useState({
@@ -27,6 +28,7 @@ export default function KontakPage() {
 
     const waLink = `https://wa.me/${targetWA}?text=${textMessage}`;
 
+    trackConversion('whatsapp');
     window.open(waLink, '_blank');
   };
 
